@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost:5173/create-post -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="/Users/malachicassel/Downloads/starting-project/src/components/post.module.css">._post_1xzqs_1 {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #9c7eee;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    animation: _animate-in_1xzqs_1 1s ease-out forwards;
+  }
+  
+  ._author_1xzqs_10 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #543280;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  ._text_1xzqs_18 {
+    white-space: pre-wrap;
+    font-size: 1.25rem;
+    margin: 0.25rem 0 0 0;
+    color: #593884;
+    font-style: italic;
+  }
+  
+  @keyframes _animate-in_1xzqs_1 {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }</style><style type="text/css" data-vite-dev-id="/Users/malachicassel/Downloads/starting-project/src/components/postlist.module.css">._posts_kko03_1 {
+    list-style: none;
+    max-width: 50rem;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+  }</style><style type="text/css" data-vite-dev-id="/Users/malachicassel/Downloads/starting-project/src/routes/newPost.module.css">._form_1yk7r_1 {
+    background-color: #6233b9;
+    padding: 1rem;
+    width: 20rem;
+    /* margin: 2rem auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); */
+  }
+  
+  ._form_1yk7r_1 label {
+    display: block;
+    margin-bottom: 0.05rem;
+    color: #eadbfb;
+    font-weight: bold;
+  }
+  
+  ._form_1yk7r_1 input,
+  ._form_1yk7r_1 textarea {
+    display: block;
+    width: 100%;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #c4a9e4;
+    color: #28262c;
+  }
+  
+  ._actions_1yk7r_29 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  ._actions_1yk7r_29 button {
+    cursor: pointer;
+    font: inherit;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #34036c;
+    color: #e5d5f7;
+  }
+  
+  ._actions_1yk7r_29 button:hover {
+    background-color: #23014a;
+  }
+  
+  ._actions_1yk7r_29 button[type='button'] {
+    background-color: transparent;
+  }
+  
+  ._actions_1yk7r_29 button[type='button']:hover {
+    color: #d1bee6;
+  }</style><style type="text/css" data-vite-dev-id="/Users/malachicassel/Downloads/starting-project/src/components/modal.module.css">._backdrop_1sv2o_1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  ._modal_1sv2o_11 {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+  }</style><style type="text/css" data-vite-dev-id="/Users/malachicassel/Downloads/starting-project/src/index.css">* {
+  box-sizing: border-box;
+}
+
+:root {
+  min-height: 100vh;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-image: radial-gradient(ellipse at top left, #7f50e4, #4c05d0);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #e6ddf9;
+}
+ .post{
+  background-color: lightcoral;
+ }</style><style type="text/css" data-vite-dev-id="/Users/malachicassel/Downloads/starting-project/src/components/MainHeader.module.css">._header_1brr7_1 {
+    /* padding: 2rem 10%; */
+    margin: 2rem 10%;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ece1fa;
+  }
+  
+  ._logo_1brr7_12 {
+    font-size: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    color: #ece1fa;
+  }
+  
+  ._button_1brr7_20 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #a990fb;
+    color: #2a2630;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  ._button_1brr7_20:hover {
+    background-color: #8c6cf7;
+  }</style></head>
+  <body>
+    <div id="root"><header class="_header_1brr7_1"><h1 class="_logo_1brr7_12"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"></path></svg>React Poster</h1><p><button class="_button_1brr7_20"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M17 19.22H5V7h7V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-7h-2v7.22z"></path><path d="M19 2h-2v3h-3c.01.01 0 2 0 2h3v2.99c.01.01 2 0 2 0V7h3V5h-3V2zM7 9h8v2H7zM7 12v2h8v-2h-3zM7 15h8v2H7z"></path></svg>New Post</button></p></header><main><ul class="_posts_kko03_1"><li class="_post_1xzqs_1"><p class="_author_1xzqs_10">pelase</p><p>do you work</p></li><li class="_post_1xzqs_1"><p class="_author_1xzqs_10">afd</p><p>asfdds</p></li><li class="_post_1xzqs_1"><p class="_author_1xzqs_10">dfsadfsafdsa</p><p>taoipsdr</p></li><li class="_post_1xzqs_1"><p class="_author_1xzqs_10">Maximilian</p><p>This course is hopefully very helpful to you!</p></li></ul></main></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body></html>
